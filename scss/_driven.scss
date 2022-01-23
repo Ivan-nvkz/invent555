@@ -1,0 +1,106 @@
+// DRIVEN start===========================================================================================
+.main-driverless {
+   // padding-top: 106px;
+   padding-top: calc(10px + (106 - 10) * ((100vw - 320px) / (1960 - 320)));
+   background-color: #15171e;
+}
+.driverless-title {
+   // margin-bottom: 80px;
+   margin-bottom: calc(10px + (80 - 10) * ((100vw - 320px) / (1960 - 320)));
+}
+.driverless__sub-title {
+   padding-top: calc(70px + (130 - 40) * ((100vw - 320px) / (1960 - 320)));
+}
+
+.driven__content {
+   background-image: url("../images/driven-bg.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+.driverless__content-info {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.driverless__card {
+   margin-bottom: calc(0px + (70 - 0) * ((100vw - 320px) / (1960 - 320)));
+   margin-top: calc(0px + (70 - 0) * ((100vw - 320px) / (1960 - 320)));
+   padding: 0;
+}
+.driverless__item {
+   margin-top: 10px;
+   /* min-width: 206px; */
+   // min-width: 12.875rem;
+   min-width: calc(0px + (206 - 0) * ((100vw - 320px) / (1960 - 320)));
+   /* padding: 43px 98px 0 87px; */
+   // padding: 2.6875rem 6.125rem 0 5.4375rem;
+   padding-top: calc(10px + (10 - 10) * ((100vw - 320px) / (1960 - 320)));
+   padding-right: calc(10px + (58 - 10) * ((100vw - 320px) / (1960 - 320)));
+   padding-left: calc(10px + (100 - 10) * ((100vw - 320px) / (1960 - 320)));
+}
+.driverless__items {
+   position: relative;
+   padding-bottom: 20px;
+}
+.driverless__items::before {
+   content: "";
+   width: 100%;
+   height: 115%;
+   position: absolute;
+   border: 1px solid #edc5a2;
+   top: -35px;
+   left: -15px;
+}
+
+// DRIVEN end===========================================================================================
+
+// DRIVEN АДАПТИВ=======================================================================================
+
+@media (max-width: 1280px) {
+   .driven__content {
+      background-image: url("../images/driven-bgx1280.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+   }
+   .driven__items::before {
+      pointer-events: none;
+      content: "";
+      width: 90%;
+      height: 115%;
+      position: absolute;
+      border: 1px solid #edc5a2;
+      top: -35px;
+      left: -15px;
+   }
+}
+@media (max-width: 1000px) {
+   .driven__content {
+      background-image: url("../images/driven-bgx1000.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+   }
+}
+@media (max-width: 768px) {
+   .driverless__content-tech {
+      background-image: none;
+   }
+   .driven__content {
+      background-image: none;
+   }
+   .driven__content .driven__content-tech {
+      background-image: url("../images/driven-bgx768.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      // min-height: 600px;
+   }
+}
+@media (max-width: 410px) {
+   .driven__content .driven__content-tech {
+      background-image: url("../images/driven-bgx410.jpg");
+      background-size: contain;
+   }
+}

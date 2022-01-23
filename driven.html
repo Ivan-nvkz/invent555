@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Galeon-gulp-25-12-21-5</title>
+   <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+   <link rel="manifest" href="images/favicons/site.webmanifest">
+   <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#333">
+   <meta name="msapplication-TileColor" content="#000000">
+   <meta name="theme-color" content="#333333">
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin="" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/air-datepicker.css">
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header" id="home">
+         <div class="header__top">
+            <div class="container">
+               <div class="header__top-inner">
+                  <div class="top-menu__inner">
+                     <div class="logo__box">
+                        <button class="burger__btn burger__btn-line">
+                           <span class="burger-span"></span>
+                        </button>
+                        <a href="#" class="logo">
+                           <img src="images/logo.svg" alt="logo" class="logo__img">
+                        </a>
+                     </div>
+                     <div class="menu__inner">
+                        <div class="btnUp">&uarr;</div>
+                        <nav class="menu">
+                           <ul class="menu__list">
+                              <li class="menu__list-item">
+                                 <a href="index.html#home" class="menu__list-link   menu__link-active">
+                                    Главная
+                                 </a>
+                              </li>
+                              <li class="menu__list-item">
+                                 <a href="index.html#carfleet" class="menu__list-link ">
+                                    Автопарк
+                                 </a>
+                              </li>
+                              <li class="menu__list-item">
+                                 <a href="index.html#rent" class="menu__list-link ">
+                                    Аренда
+                                 </a>
+                              </li>
+                              <li class="menu__list-item">
+                                 <a href="index.html#business" class="menu__list-link ">
+                                    Для бизнеса
+                                 </a>
+                              </li>
+                              <li class="menu__list-item">
+                                 <a href="index.html#contact" class="menu__list-link ">
+                                    Контакты
+                                 </a>
+                              </li>
+                              <li class="menu__list-item">
+                                 <a href="log.html" class="menu__list-link ">
+                                    Личный кабинет
+                                 </a>
+                              </li>
+                           </ul>
+                        </nav>
+                     </div>
+                     <div class="social">
+                        <div class="social__inner">
+                           <div class="social__item">
+                              <a href="#" class="social__link">
+                                 <img src="images/icons/social-fb.svg" alt="фейсбук" class="social__img">
+                              </a>
+                           </div>
+                           <div class="social__item">
+                              <a href="#" class="social__link">
+                                 <img src="images/icons/social-inst.svg" alt="инстаграм" class="social__img">
+                              </a>
+                           </div>
+                           <div class="social__item">
+                              <a href="#" class="social__link">
+                                 <img src="images/icons/social-vk.svg" alt="вк" class="social__img">
+                              </a>
+                           </div>
+                           <div class="social__item">
+                              <a href="#" class="social__link">
+                                 <img src="images/icons/social-whatsap.svg" alt="вацап" class="social__img">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="contacts__inner">
+                     <div class="phone">
+                        <a href="tel:88888888888" class="phone__link">
+                           8 (888) 888-88-88
+                        </a>
+                     </div>
+                     <div class="market">
+                        <a href="#" class="market__link">
+                           <img src="images/apple-store.svg" alt="App Store" class="market__img">
+                        </a>
+                        <a href="#" class="market__link">
+                           <img src="images/google-play.svg" alt="Google play" class="market__img">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <main class="main main-driverless">
+         <div class="main__inner  main-driverless__inner">
+            <section class="driverless driven ">
+               <div class="container">
+                  <div class="driverless__inner">
+                     <div class="title__box driverless-box">
+                        <h3 class="content-sub-title driverless__sub-title">АРЕНДА АВТОМОБИЛЯ </h3>
+                        <h1 class="content-title   driverless-title">C ВОДИТЕЛЕМ</h1>
+                     </div>
+                     <div class=" driven__content">
+                        <div class="driverless__content-tech   driven__content-tech    "></div>
+                        <div class="driverless__content-info">
+                           <div class="card rental-terms__card  driverless__card">
+                              <div class=" driverless__items driven__items">
+                                 <div class="card__item driverless__item driven__item">
+                                    <p class="card__item-title card__item-title--docs ">
+                                       Аренда
+                                    </p>
+                                    <p class="card__item-text">
+                                       24/7
+                                    </p>
+                                 </div>
+                                 <div class="card__item driverless__item driven__item">
+                                    <p class="card__item-title card__item-title--age">
+                                       ПЕРВОКЛАССНЫЕ
+                                    </p>
+                                    <p class="card__item-text">
+                                       водители
+                                    </p>
+                                 </div>
+                                 <div class="card__item driverless__item driven__item">
+                                    <p class="card__item-title card__item-title--experience">
+                                       ПОДАЧА
+                                    </p>
+                                    <p class="card__item-text">
+                                       в любую точку Санкт- <br> Петербурга и
+                                       Ленинградской области
+                                    </p>
+                                 </div>
+                                 <div class="card__item driverless__item driven__item">
+                                    <p class="card__item-title card__item-title--timeline">
+                                       Срок аренды
+                                    </p>
+                                    <p class="card__item-text">
+                                       от 1 часа
+                                    </p>
+                                 </div>
+                                 <div class="card__item driverless__item driven__item">
+                                    <p class="card__item-title ">
+
+                                    </p>
+                                    <p class="card__item-text">
+
+                                    </p>
+                                 </div>
+                                 <div class="card__item driverless__item driven__item">
+                                    <p class="card__item-title ">
+
+                                    </p>
+                                    <p class="card__item-text">
+
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="driverless__content-slider"></div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+         <div class="modal__overlay">
+            <div class="card-modal" id="application">
+               <div class="clouse__modal">
+                  <img src="images/icons/icon-close-menu-btn.svg" alt="" class="clouse-img">
+               </div>
+               <form action="send.php" method="POST" class="form">
+                  <h3 class="auto-title">Заказать автомобиль</h3>
+                  <div class="user-info">
+                     <p class="user-text">Имя*</p>
+                     <label>
+                        <input type="text" required minlength="3" class="reserve__input" placeholder="Ваше имя"
+                           name="name">
+                     </label>
+                     <p class="user-text">Телефон* </p>
+                     <label>
+                        <input type="tel" required class="reserve__input reserve__input-phone" placeholder="Телефон"
+                           name="phone">
+                     </label>
+                     <p class="user-text">E-mail*</p>
+                     <label>
+                        <input type="email" required class="reserve__input reserve__input-e-mail" placeholder="E-mail"
+                           name="email">
+                     </label>
+                  </div>
+                  <p class="text-form">Выбырите класс автомобиля </p>
+                  <div class="auto__box-class">
+                     <div class="auto__box">
+                        <label>
+                           <input class="input__base-box" type="radio" value="Бизнес" name="auto" checked>
+                           <span class="radio-style"></span>
+                           Бизнес
+                        </label>
+                     </div>
+                     <div class="auto__box">
+                        <label>
+                           <input class="input__base-box" type="radio" value="Спорт" name="auto">
+                           <span class="radio-style"></span>
+                           Спорт
+                        </label>
+                     </div>
+                     <div class="auto__box">
+                        <label>
+                           <input class="input__base-box" type="radio" value="Премиум" name="auto">
+                           <span class="radio-style"></span>
+                           Премиум
+                        </label>
+                     </div>
+                  </div>
+                  <p class="text-form">Выбырите условия аренды </p>
+                  <div class="auto__box-conditions">
+                     <div class="auto__box">
+                        <label>
+                           <input class="input__base-box" type="radio" value="С водителем" name="conditions">
+                           <span class="radio-style"></span>
+                           С водителем
+                        </label>
+                     </div>
+                     <div class="auto__box">
+                        <label>
+                           <input class="input__base-box" type="radio" value="Без водителя" name="conditions" checked>
+                           <span class="radio-style"></span>
+                           Без водителя
+                        </label>
+                     </div>
+                  </div>
+                  <p class="text-form">Выбырите дату аренды </p>
+                  <p class="user-text">Дата*</p>
+                  <label>
+                     <input required type="text" class="date__rent" name="data" placeholder="Выберите дату">
+                  </label>
+                  <button class="auto-btn" type="submit">
+                     Отправить
+                  </button>
+               </form>
+            </div>
+         </div>
+
+         <div class="overley">
+            <div class="modal" id="thanks">
+               <div class="modal__close">&times;</div>
+               <div class="modal__subtitle">Спасибо!</div>
+               <div class="modal__description">Ваше сообщение отправлено.</div>
+            </div>
+         </div>
+
+      </main>
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__inner">
+               <div class="footer__logo-box ">
+                  <a href="#" class="logo logo-footer">
+                     <img src="images/icons/footer-logo.svg" alt="logo" class="logo__img">
+                  </a>
+               </div>
+               <div class="menu__inner footer-menu__inner">
+                  <nav class="menu footer-menu">
+                     <ul class=" footer-menu__list">
+                        <li class="menu__list-item footer-menu__list-item">
+                           <a href="index.html#home" class="menu__list-link footer-menu__list-link">
+                              Главная
+                           </a>
+                        </li>
+                        <li class="menu__list-item footer-menu__list-item">
+                           <a href="index.html#carfleet" class="menu__list-link footer-menu__list-link">
+                              Автопарк
+                           </a>
+                        </li>
+                        <li class="menu__list-item footer-menu__list-item">
+                           <a href="index.html#rent" class="menu__list-link footer-menu__list-link">
+                              Аренда
+                           </a>
+                        </li>
+                        <li class="menu__list-item footer-menu__list-item">
+                           <a href="index.html#business" class="menu__list-link footer-menu__list-link">
+                              Для бизнеса
+                           </a>
+                        </li>
+                        <li class="menu__list-item footer-menu__list-item">
+                           <a href="index.html#contact" class="menu__list-link footer-menu__list-link">
+                              Контакты
+                           </a>
+                        </li>
+                        <li class="menu__list-item footer-menu__list-item">
+                           <a href="index.html#user" class="menu__list-link footer-menu__list-link">
+                              Личный кабинет
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="copyright">
+                  2022 © <span>galeoncar</span>
+               </div>
+               <div class="confidentiality-policy">
+                  Политика конфиденциальности
+               </div>
+               <div class="social footer-social">
+                  <div class="social__inner footer-social__inner">
+                     <div class="social__item">
+                        <a href="#" class="social__link">
+                           <img src="images/icons/social-fb.svg" alt="фейсбук" class="social__img">
+                        </a>
+                     </div>
+                     <div class="social__item">
+                        <a href="#" class="social__link">
+                           <img src="images/icons/social-inst.svg" alt="инстаграм" class="social__img">
+                        </a>
+                     </div>
+                     <div class="social__item">
+                        <a href="#" class="social__link">
+                           <img src="images/icons/social-vk.svg" alt="вк" class="social__img">
+                        </a>
+                     </div>
+                     <div class="social__item">
+                        <a href="#" class="social__link">
+                           <img src="images/icons/social-whatsap.svg" alt="вацап" class="social__img">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+   <script src="js/inputmask.min.js"></script>
+   <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/air-datepicker.js"></script>
+   <script src="js/main.min.js"></script>
+</body>
+
+</html>

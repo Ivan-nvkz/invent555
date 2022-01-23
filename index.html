@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Galeon-gulp-prodacts </title>
+   <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+   <link rel="manifest" href="images/favicons/site.webmanifest">
+   <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#333">
+   <meta name="msapplication-TileColor" content="#000000">
+   <meta name="theme-color" content="#333333">
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin="" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/air-datepicker.css">
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header" id="home">
+         <div class="header__top">
+            <div class="container">
+               <div class="header__top-inner">
+                  <div class="top-menu__inner">
+                     <div class="logo__box">
+                        <button class="burger__btn burger__btn-line">
+                           <span class="burger-span"></span>
+                        </button>
+                        <a href="#" class="logo">
+                           <img src="images/logo.svg" alt="logo" class="logo__img">
+                        </a>
+                     </div>
+                     <div class="menu__inner">
+                        <div class="btnUp">&uarr;</div>
+                        <nav class="menu">
+                           <ul class="menu__list">
+                              <li class="menu__list-item">
+                                 <a href="#home" class="menu__list-link  menu__link menu__link-active ">
+                                    <span class="lng-home"> Главная</span>
+                                 </a>
+                              </li>
+                              <li class="menu__list-item">
+                                 <a href="#carfleet" class="menu__list-link  menu__link ">
+                                    <span class="lng-carfleet"> Автопаркя</span>
+
+                                 </a>
+                              </li>
+                              <li class="menu__list-item">
+                                 <a href="#rent" class="menu__list-link menu__link ">
+                                    <span class="lng-rent">Аренда</span>
+
+                                 </a>
+                              </li>
+                              <li class="menu__list-item">
+                                 <a href="#business" class="menu__list-link menu__link ">
+                                    <span class="lng-business"> Для бизнеса</span>
+
+                                 </a>
+                              </li>
+                              <li class="menu__list-item">
+                                 <a href="#contact" class="menu__list-link menu__link ">
+                                    <span class="lng-contact"> Контакты</span>
+
+                                 </a>
+                              </li>
+                              <li class="menu__list-item">
+                                 <a href="log.html" class="menu__list-link">
+                                    Личный кабинет
+                                 </a>
+                              </li>
+                           </ul>
+                        </nav>
+                     </div>
+
+                     <div class="social">
+                        <div class="social__inner">
+                           <div class="social__item">
+                              <a href="#" class="social__link">
+                                 <img src="images/icons/social-fb.svg" alt="фейсбук" class="social__img">
+                              </a>
+                           </div>
+                           <div class="social__item">
+                              <a href="#" class="social__link">
+                                 <img src="images/icons/social-inst.svg" alt="инстаграм" class="social__img">
+                              </a>
+                           </div>
+                           <div class="social__item">
+                              <a href="#" class="social__link">
+                                 <img src="images/icons/social-vk.svg" alt="вк" class="social__img">
+                              </a>
+                           </div>
+                           <div class="social__item">
+                              <a href="#" class="social__link">
+                                 <img src="images/icons/social-whatsap.svg" alt="вацап" class="social__img">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="contacts__inner">
+                     <div class="phone">
+                        <a href="tel:88888888888" class="phone__link">
+                           8 (888) 888-88-88
+                        </a>
+                     </div>
+                     <div class="market">
+                        <select class="change-lang">
+                           <option value="ru" selected>RU</option>
+                           <option value="en">EN</option>
+                        </select>
+                        <!-- <a href="#" class="market__link">
+                           <img src="images/apple-store.svg" alt="App Store" class="market__img">
+                        </a>
+                        <a href="#" class="market__link">
+                           <img src="images/google-play.svg" alt="Google play" class="market__img">
+                        </a> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="header__content">
+            <div class="container">
+               <div class="header__content-inner">
+                  <div class="title__inner">
+                     <div class="title__box">
+                        <h3 class="content-sub-title header__sub-title lng-header__sub-title">
+                           АРЕНДА
+                        </h3>
+                        <h1 class="content-title lng-content-title">ПРЕМИУМ АВТОМОБИЛЕЙ</h1>
+                     </div>
+                     <a href="#" class="title__button">
+                        <img src="images/header-button.svg" alt="кнопка" class="title__btn-images">
+                     </a>
+                  </div>
+                  <div class="swiper">
+                     <div class="btn-container">
+                        <div class="swiper-button-prev"></div>
+                        <div class="circle"><img src="images/circle-slider.svg" alt=""></div>
+                        <div class="swiper-button-next"></div>
+                     </div>
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <img src="images/slider-header/1.jpg" alt="5" class="header__slider-swiper">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="images/slider-header/2.jpg" alt="5" class="header__slider-swiper">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="images/slider-header/3.jpg" alt="5" class="header__slider-swiper">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="images/slider-header/4.jpg" alt="5" class="header__slider-swiper">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="images/slider-header/5.jpg" alt="5" class="header__slider-swiper">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="images/slider-header/6.jpg" alt="5" class="header__slider-swiper">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="images/slider-header/7.jpg" alt="5" class="header__slider-swiper">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="images/slider-header/8.webp" alt="5" class="header__slider-swiper">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="images/slider-header/9.jpg" alt="5" class="header__slider-swiper">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="images/slider-header/10.webp" alt="5" class="header__slider-swiper">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="main">
+         <section class="types-rent">
+            <div class="container">
+               <div class="types-rent__title">
+                  <div class="title-box">
+                     <h3 class="sub-title">
+                        ВИДЫ
+                     </h3>
+                     <h2 class="title">
+                        АРЕНДЫ
+                     </h2>
+                  </div>
+               </div>
+               <div class="types-rent__slider">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide rent__swiper-slide">
+                        <img src="images/slider-types-rent/1.jpg" alt="5" class="types-rentr__slider-swiper">
+                        <div class="slider-box">
+                           <p class="slider-text">
+                              <a href="driven.html" class="slider-link">
+                                 С ВОДИТЕЛЕМ
+                              </a>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide rent__swiper-slide">
+                        <img src="images/slider-types-rent/2.jpg" alt="5" class="types-rentr__slider-swiper">
+                        <div class="slider-box">
+                           <p class="slider-text">
+                              <a href="special.html" class="slider-link">
+                                 ДЛЯ ОСОБЫХ ЦЕЛЕЙ
+                              </a>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide rent__swiper-slide">
+                        <img src="images/slider-types-rent/3.jpg" alt="5" class="types-rentr__slider-swiper">
+                        <div class="slider-box">
+                           <p class="slider-text">
+                              <a href="driverless.html" class="slider-link">
+                                 БЕЗ ВОДИТЕЛЯ
+                              </a>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <div class="modal__overlay">
+            <div class="card-modal" id="application">
+               <div class="clouse__modal">
+                  <img src="images/icons/icon-close-menu-btn.svg" alt="" class="clouse-img">
+               </div>
+               <form action="send.php" method="POST" class="form">
+                  <h3 class="auto-title">Заказать автомобиль</h3>
+                  <div class="user-info">
+                     <p class="user-text">Имя*</p>
+                     <label>
+                        <input type="text" required minlength="3" class="reserve__input" placeholder="Ваше имя"
+                           name="name">
+                     </label>
+                     <p class="user-text">Телефон* </p>
+                     <label>
+                        <input type="tel" required class="reserve__input reserve__input-phone" placeholder="Телефон"
+                           name="phone">
+                     </label>
+                     <p class="user-text">E-mail*</p>
+                     <label>
+                        <input type="email" required class="reserve__input reserve__input-e-mail" placeholder="E-mail"
+                           name="email">
+                     </label>
+                  </div>
+                  <p class="text-form">Выбырите класс автомобиля </p>
+                  <div class="auto__box-class">
+                     <div class="auto__box">
+                        <label>
+                           <input class="input__base-box" type="radio" value="Бизнес" name="auto" checked>
+                           <span class="radio-style"></span>
+                           Бизнес
+                        </label>
+                     </div>
+                     <div class="auto__box">
+                        <label>
+                           <input class="input__base-box" type="radio" value="Спорт" name="auto">
+                           <span class="radio-style"></span>
+                           Спорт
+                        </label>
+                     </div>
+                     <div class="auto__box">
+                        <label>
+                           <input class="input__base-box" type="radio" value="Премиум" name="auto">
+                           <span class="radio-style"></span>
+                           Премиум
+                        </label>
+                     </div>
+                  </div>
+                  <p class="text-form">Выбырите условия аренды </p>
+                  <div class="auto__box-conditions">
+                     <div class="auto__box">
+                        <label>
+                           <input class="input__base-box" type="radio" value="С водителем" name="conditions">
+                           <span class="radio-style"></span>
+                           С водителем
+                        </label>
+                     </div>
+                     <div class="auto__box">
+                        <label>
+                           <input class="input__base-box" type="radio" value="Без водителя" name="conditions" checked>
+                           <span class="radio-style"></span>
+                           Без водителя
+                        </label>
+                     </div>
+                  </div>
+                  <p class="text-form">Выбырите дату аренды </p>
+                  <p class="user-text">Дата*</p>
+                  <label>
+                     <input required type="text" class="date__rent" name="data" placeholder="Выберите дату">
+                  </label>
+                  <button class="auto-btn" type="submit">
+                     Отправить
+                  </button>
+               </form>
+            </div>
+         </div>
+
+
+         <div class="overley">
+            <div class="modal" id="thanks">
+               <div class="modal__close">&times;</div>
+               <div class="modal__subtitle">Спасибо!</div>
+               <div class="modal__description">Ваше сообщение отправлено.</div>
+            </div>
+         </div>
+
+
+
+
+
+
+
+         <section class="car-fleet new-block" id="carfleet">
+            <div class=" container">
+               <div class="car-fleet__title-inner">
+                  <div class="title-box car-fleet-box">
+                     <h2 class="title car-fleet__title">
+                        АВТОПАРК
+                     </h2>
+                     <div class="sub-title__box">
+                        <p class="sub-title__text">
+                           <a href="carflet.html" class="sub-title__link">
+                              Премиум
+                           </a>
+                        </p>
+                        <p class="sub-title__text">
+                           <a href="carflet.html" class="sub-title__link">
+                              Бизнес
+                           </a>
+                        </p>
+                        <p class="sub-title__text">
+                           <a href="carflet.html" class="sub-title__link">
+                              Спорт
+                           </a>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="car-fleet__slider">
+                  <div class="btn-container">
+                     <div class="swiper-button-prev"></div>
+                     <div class="swiper-pagination__inner">
+                        <div class="swiper-pagination"></div>
+                        <div class="arrows"></div>
+                     </div>
+                     <div class="swiper-button-next"></div>
+                  </div>
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide car-fleet__swiper-slide">
+                        <img src="images/slider-car-fleet/1.jpg" alt="5" class="car-fleet__slider-swiper">
+                        <div class="slider-box ">
+                           <p class="slider-text">
+                              <a href="#" class="slider-link slider-link-btn">
+                                 ЗАКАЗАТЬ МАШИНУ
+                              </a>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide car-fleet__swiper-slide">
+                        <img src="images/slider-car-fleet/2.jpg" alt="5" class="car-fleet__slider-swiper">
+                        <div class="slider-box">
+                           <p class="slider-text">
+                              <a href="#" class="slider-link slider-link-btn">
+                                 ЗАКАЗАТЬ МАШИНУ
+                              </a>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide car-fleet__swiper-slide">
+                        <img src="images/slider-car-fleet/3.jpg" alt="5" class="car-fleet__slider-swiper">
+                        <div class="slider-box">
+                           <p class="slider-text">
+                              <a href="#" class="slider-link slider-link-btn">
+                                 ЗАКАЗАТЬ МАШИНУ
+                              </a>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide car-fleet__swiper-slide">
+                        <img src="images/slider-car-fleet/1.jpg" alt="5" class="car-fleet__slider-swiper">
+                        <div class="slider-box">
+                           <p class="slider-text">
+                              <a href="#" class="slider-link slider-link-btn">
+                                 ЗАКАЗАТЬ МАШИНУ
+                              </a>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide car-fleet__swiper-slide">
+                        <img src="images/slider-car-fleet/2.jpg" alt="5" class="car-fleet__slider-swiper">
+                        <div class="slider-box">
+                           <p class="slider-text">
+                              <a href="#" class="slider-link slider-link-btn">
+                                 ЗАКАЗАТЬ МАШИНУ
+                              </a>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="swiper-slide car-fleet__swiper-slide">
+                        <img src="images/slider-car-fleet/3.jpg" alt="5" class="car-fleet__slider-swiper">
+                        <div class="slider-box">
+                           <p class="slider-text">
+                              <a href="#" class="slider-link slider-link-btn">
+                                 ЗАКАЗАТЬ МАШИНУ
+                              </a>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="rental-terms" id="rent">
+            <div class="rental-terms__inner">
+               <div class="container">
+                  <div class="title-box rental-terms-box">
+                     <h3 class="sub-title rental-terms__sub-title">
+                        УСЛОВИЯ
+                     </h3>
+                     <h2 class="title rental-terms__title">
+                        АРЕНДЫ
+                     </h2>
+                  </div>
+                  <div class="rental-terms__content">
+                     <div class="rental-terms__accordion">
+                        <div class="accordeon">
+                           <div class="accordeon-body">
+                              <div class="accordeon-box">
+                                 <button class="accordeon-btn">Правила аренды</button>
+                                 <div class="panel">
+                                    <ul class="item__list">
+                                       <li class="item__text">
+                                          Эксплуатировать автомобиль только в пределах СПб и ЛО. Выезд за
+                                          пределы
+                                          ЛО
+                                          согласовывается
+                                          индивидуально.
+                                       </li>
+                                       <li class="item__text">
+                                          Не нарушать скоростные ограничения и не использовать экстремальные
+                                          техники
+                                          вождения.
+                                       </li>
+                                       <li class="item__text">
+                                          Не передавать управление другому человеку без оформления на него
+                                          договора
+                                          аренды.
+                                          При желании вы
+                                          можете бесплатно внести второго водителя в договор аренды.
+                                       </li>
+                                       <li class="item__text">
+                                          Не управлять транспортным средством в состоянии алкогольного
+                                          опьянения.
+                                       </li>
+                                       <li class="item__text">
+                                          Не перевозить оружие и вещества, запрещенные законодательством
+                                          Российской
+                                          Федерации.
+                                       </li>
+                                       <li class="item__text">
+                                          Соблюдать правила парковки
+                                       </li>
+                                       <li class="item__text">
+                                          Соблюдать чистоту и не курить в салоне автомобиля.
+                                       </li>
+                                       <li class="item__text">
+                                          Перевозить животных только в закрытых переносках, исключающих прямой
+                                          контакт
+                                          животных с салоном
+                                          автомобиля.
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="accordeon-box">
+                                 <button class="accordeon-btn">Условия бронирования</button>
+                                 <div class="panel">
+                                    <ul class="item__list">
+                                       <li class="item__text">
+                                          Эксплуатировать автомобиль только в пределах СПб и ЛО. Выезд за
+                                          пределы
+                                          ЛО
+                                          согласовывается
+                                          индивидуально.
+                                       </li>
+                                       <li class="item__text">
+                                          Не нарушать скоростные ограничения и не использовать экстремальные
+                                          техники
+                                          вождения.
+                                       </li>
+                                       <li class="item__text">
+                                          Не передавать управление другому человеку без оформления на него
+                                          договора
+                                          аренды.
+                                          При желании вы
+                                          можете бесплатно внести второго водителя в договор аренды.
+                                       </li>
+                                       <li class="item__text">
+                                          Не управлять транспортным средством в состоянии алкогольного
+                                          опьянения.
+                                       </li>
+                                       <li class="item__text">
+                                          Не перевозить оружие и вещества, запрещенные законодательством
+                                          Российской
+                                          Федерации.
+                                       </li>
+                                       <li class="item__text">
+                                          Соблюдать правила парковки
+                                       </li>
+                                       <li class="item__text">
+                                          Соблюдать чистоту и не курить в салоне автомобиля.
+                                       </li>
+                                       <li class="item__text">
+                                          Перевозить животных только в закрытых переносках, исключающих прямой
+                                          контакт
+                                          животных с салоном
+                                          автомобиля.
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="accordeon-box">
+                                 <button class="accordeon-btn">Обеспечительный платеж</button>
+                                 <div class="panel">
+                                    <ul class="item__list">
+                                       <li class="item__text">
+                                          Эксплуатировать автомобиль только в пределах СПб и ЛО. Выезд за
+                                          пределы
+                                          ЛО
+                                          согласовывается
+                                          индивидуально.
+                                       </li>
+                                       <li class="item__text">
+                                          Не нарушать скоростные ограничения и не использовать экстремальные
+                                          техники
+                                          вождения.
+                                       </li>
+                                       <li class="item__text">
+                                          Не передавать управление другому человеку без оформления на него
+                                          договора
+                                          аренды.
+                                          При желании вы
+                                          можете бесплатно внести второго водителя в договор аренды.
+                                       </li>
+                                       <li class="item__text">
+                                          Не управлять транспортным средством в состоянии алкогольного
+                                          опьянения.
+                                       </li>
+                                       <li class="item__text">
+                                          Не перевозить оружие и вещества, запрещенные законодательством
+                                          Российской
+                                          Федерации.
+                                       </li>
+                                       <li class="item__text">
+                                          Соблюдать правила парковки
+                                       </li>
+                                       <li class="item__text">
+                                          Соблюдать чистоту и не курить в салоне автомобиля.
+                                       </li>
+                                       <li class="item__text">
+                                          Перевозить животных только в закрытых переносках, исключающих прямой
+                                          контакт
+                                          животных с салоном
+                                          автомобиля.
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="accordeon-box">
+                                 <button class="accordeon-btn">Cтрахование</button>
+                                 <div class="panel">
+                                    <ul class="item__list">
+                                       <li class="item__text">
+                                          Эксплуатировать автомобиль только в пределах СПб и ЛО. Выезд за
+                                          пределы
+                                          ЛО
+                                          согласовывается
+                                          индивидуально.
+                                       </li>
+                                       <li class="item__text">
+                                          Не нарушать скоростные ограничения и не использовать экстремальные
+                                          техники
+                                          вождения.
+                                       </li>
+                                       <li class="item__text">
+                                          Не передавать управление другому человеку без оформления на него
+                                          договора
+                                          аренды.
+                                          При желании вы
+                                          можете бесплатно внести второго водителя в договор аренды.
+                                       </li>
+                                       <li class="item__text">
+                                          Не управлять транспортным средством в состоянии алкогольного
+                                          опьянения.
+                                       </li>
+                                       <li class="item__text">
+                                          Не перевозить оружие и вещества, запрещенные законодательством
+                                          Российской
+                                          Федерации.
+                                       </li>
+                                       <li class="item__text">
+                                          Соблюдать правила парковки
+                                       </li>
+                                       <li class="item__text">
+                                          Соблюдать чистоту и не курить в салоне автомобиля.
+                                       </li>
+                                       <li class="item__text">
+                                          Перевозить животных только в закрытых переносках, исключающих прямой
+                                          контакт
+                                          животных с салоном
+                                          автомобиля.
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="accordeon-box">
+                                 <button class="accordeon-btn">Доставка и возврат</button>
+                                 <div class="panel">
+                                    <ul class="item__list">
+                                       <li class="item__text">
+                                          Эксплуатировать автомобиль только в пределах СПб и ЛО. Выезд за
+                                          пределы
+                                          ЛО
+                                          согласовывается
+                                          индивидуально.
+                                       </li>
+                                       <li class="item__text">
+                                          Не нарушать скоростные ограничения и не использовать экстремальные
+                                          техники
+                                          вождения.
+                                       </li>
+                                       <li class="item__text">
+                                          Не передавать управление другому человеку без оформления на него
+                                          договора
+                                          аренды.
+                                          При желании вы
+                                          можете бесплатно внести второго водителя в договор аренды.
+                                       </li>
+                                       <li class="item__text">
+                                          Не управлять транспортным средством в состоянии алкогольного
+                                          опьянения.
+                                       </li>
+                                       <li class="item__text">
+                                          Не перевозить оружие и вещества, запрещенные законодательством
+                                          Российской
+                                          Федерации.
+                                       </li>
+                                       <li class="item__text">
+                                          Соблюдать правила парковки
+                                       </li>
+                                       <li class="item__text">
+                                          Соблюдать чистоту и не курить в салоне автомобиля.
+                                       </li>
+                                       <li class="item__text">
+                                          Перевозить животных только в закрытых переносках, исключающих прямой
+                                          контакт
+                                          животных с салоном
+                                          автомобиля.
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card rental-terms__card">
+                        <div class="card__items">
+                           <div class="card__item ">
+                              <p class="card__item-title card__item-title--docs">
+                                 Документы
+                              </p>
+                              <p class="card__item-text">
+                                 Паспорт и водительское
+                                 удостоверение
+                              </p>
+                           </div>
+                           <div class="card__item">
+                              <p class="card__item-title card__item-title--age">
+                                 Возраст
+                              </p>
+                              <p class="card__item-text">
+                                 от 21 года
+                              </p>
+                           </div>
+                           <div class="card__item">
+                              <p class="card__item-title card__item-title--experience">
+                                 Стаж
+                              </p>
+                              <p class="card__item-text">
+                                 не менее 2 лет
+                              </p>
+                           </div>
+                           <div class="card__item">
+                              <p class="card__item-title card__item-title--timeline">
+                                 Срок аренды
+                              </p>
+                              <p class="card__item-text">
+                                 от 1 часа
+                              </p>
+                           </div>
+                           <div class="card__item">
+                              <p class="card__item-title card__item-title--price">
+                                 Цена
+                              </p>
+                              <p class="card__item-text">
+                                 фиксированная
+                              </p>
+                           </div>
+                           <div class="card__item">
+                              <p class="card__item-title card__item-title--control">
+                                 Управление
+                              </p>
+                              <p class="card__item-text">
+                                 возможна передача
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="for-business" id="business">
+            <div class="container">
+               <div class="business__inner">
+                  <div class="title-box business__title-box">
+                     <h3 class="sub-title business__sub-title">
+                        АРЕНДА АВТОМОБИЛЯ
+                     </h3>
+                     <h2 class="title business__title">
+                        ДЛЯ БИЗНЕСА
+                     </h2>
+                  </div>
+                  <div class="business__content">
+                     <div class="business-content__inner">
+                        <div class="business-content__title">
+                           Простота, удобство и комфорт
+                        </div>
+                        <ul class="business-content__items">
+                           <li class="business-content__item">
+                              Вам не нужно покупать машину и страховой полис
+                           </li>
+                           <li class="business-content__item">
+                              В личном кабинете Вы сможете контролировать использования автомобиля своими
+                              сотрудниками
+                           </li>
+                           <li class="business-content__item">
+                              Вы самостоятельно выставляете лимиты своим сотрудникам
+                           </li>
+                           <li class="business-content__item">
+                              Наша система позволяет построить трекер движения автомобиля
+                           </li>
+                           <li class="business-content__item">
+                              Без суточного лимита по пробегу
+                           </li>
+                           <li class="business-content__item">
+                              Не нужно думать о ТО и замене резины
+                           </li>
+                           <li class="business-content__item">
+                              Техническая поддержка 24/7
+                           </li>
+                           <li class="business-content__item">
+                              Возможность передачи права управления автомобилем
+                           </li>
+                        </ul>
+                        <p class="description">
+                           *Подробнее c условиями Вас ознакомит персональный менеджер
+                        </p>
+                     </div>
+                     <div class="content__box"></div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="reviews">
+            <div class="container">
+               <div class="reviews__inner">
+                  <div class="title-box reviews-box">
+                     <h3 class="sub-title reviews__sub-title">
+                        ОТЗЫВЫ
+                     </h3>
+                     <h2 class="title reviews__title">
+                        НАШИХ КЛИЕНТОВ
+                     </h2>
+                  </div>
+                  <div class=" swiper-duo ">
+                     <div class=" myswiper-smol">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide  swiper-slide-duo">
+                              <div class="reviews-box__user">
+                                 <img class="reviews-photo__smoll" src="images/reviews-photo-1.jpg" alt="">
+                                 <div class="reviews-box__info">
+                                    <p class="user-name">
+                                       Евгений
+                                    </p>
+                                    <p class="user-city">
+                                       Санкт-Петербург
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide  swiper-slide-duo">
+                              <div class="reviews-box__user">
+                                 <img class="reviews-photo__smoll" src="images/reviews-photo-2.jpg" alt="">
+                                 <div class="reviews-box__info">
+                                    <p class="user-name">
+                                       Александр
+                                    </p>
+                                    <p class="user-city">
+                                       Санкт-Петербург
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide  swiper-slide-duo">
+                              <div class="reviews-box__user">
+                                 <img class="reviews-photo__smoll" src="images/reviews-photo-3.jpg" alt="">
+                                 <div class="reviews-box__info">
+                                    <p class="user-name">
+                                       Вячеслав
+                                    </p>
+                                    <p class="user-city">
+                                       Санкт-Петербург
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide  swiper-slide-duo">
+                              <div class="reviews-box__user">
+                                 <img class="reviews-photo__smoll" src="images/reviews-photo-4.jpg" alt="">
+                                 <div class="reviews-box__info">
+                                    <p class="user-name">
+                                       Елена
+                                    </p>
+                                    <p class="user-city">
+                                       Санкт-Петербург
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide  swiper-slide-duo">
+                              <div class="reviews-box__user">
+                                 <img class="reviews-photo__smoll" src="images/reviews-photo-1.jpg" alt="">
+                                 <div class="reviews-box__info">
+                                    <p class="user-name">
+                                       Алексей
+                                    </p>
+                                    <p class="user-city">
+                                       Санкт-Петербург
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide  swiper-slide-duo">
+                              <div class="reviews-box__user">
+                                 <img class="reviews-photo__smoll" src="images/reviews-photo-1.jpg" alt="">
+                                 <div class="reviews-box__info">
+                                    <p class="user-name">
+                                       Евгений
+                                    </p>
+                                    <p class="user-city">
+                                       Санкт-Петербург
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide  swiper-slide-duo">
+                              <div class="reviews-box__user">
+                                 <img class="reviews-photo__smoll" src="images/reviews-photo-2.jpg" alt="">
+                                 <div class="reviews-box__info">
+                                    <p class="user-name">
+                                       Александр
+                                    </p>
+                                    <p class="user-city">
+                                       Санкт-Петербург
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide  swiper-slide-duo">
+                              <div class="reviews-box__user">
+                                 <img class="reviews-photo__smoll" src="images/reviews-photo-3.jpg" alt="">
+                                 <div class="reviews-box__info">
+                                    <p class="user-name">
+                                       Вячеслав
+                                    </p>
+                                    <p class="user-city">
+                                       Санкт-Петербург
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide  swiper-slide-duo">
+                              <div class="reviews-box__user">
+                                 <img class="reviews-photo__smoll" src="images/reviews-photo-4.jpg" alt="">
+                                 <div class="reviews-box__info">
+                                    <p class="user-name">
+                                       Елена
+                                    </p>
+                                    <p class="user-city">
+                                       Санкт-Петербург
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide  swiper-slide-duo">
+                              <div class="reviews-box__user">
+                                 <img class="reviews-photo__smoll" src="images/reviews-photo-1.jpg" alt="">
+                                 <div class="reviews-box__info">
+                                    <p class="user-name">
+                                       Алексей
+                                    </p>
+                                    <p class="user-city">
+                                       Санкт-Петербург
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="btn-container btn-container-duo">
+                        <div class=" swiper-button-prev-duo"></div>
+                        <div class=" swiper-button-next-duo"></div>
+                     </div>
+                     <div class="myswiper2-box">
+                        <div class=" myswiper2">
+                           <div class="swiper-wrapper">
+                              <div class="swiper-slide  swiper-slide-duo">
+                                 <div class="reviews-text__box">
+                                    <p class="reviews-title">
+                                       Евгений
+                                    </p>
+                                    <p class="reviews-text">
+                                       Tony has more than 10 years of experience, building and implementing
+                                       startups. As
+                                       CTO
+                                       of
+                                       Flexo, Tony projects the vision of the company by directing its
+                                       strategic
+                                       technology
+                                       investments. Before Flexo, Tony was Senior Director of Research and
+                                       Modeling at
+                                       CDA
+                                       Insurance, where he managed a team of developers. Tom has his master’s
+                                       degree in
+                                       Analytics, and a bachelor’s degree in Psychology from University of
+                                       London.
+                                    </p>
+                                    <div class="star-box">
+                                       <img src="images/rating.svg" alt="" class="rate">
+                                       <p class="more">
+                                          <a href="#" class="more__link"> Подробнее...</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="swiper-slide  swiper-slide-duo">
+                                 <div class="reviews-text__box">
+                                    <p class="reviews-title">
+                                       Александр
+                                    </p>
+                                    <p class="reviews-text">
+                                       Tony has more than 10 years of experience, building and implementing
+                                       startups. As
+                                       CTO
+                                       of
+                                       Flexo, Tony projects the vision of the company by directing its
+                                       strategic
+                                       technology
+                                       investments. Before Flexo, Tony was Senior Director of Research and
+                                       Modeling at
+                                       CDA
+                                       Insurance, where he managed a team of developers. Tom has his master’s
+                                       degree in
+                                       Analytics, and a bachelor’s degree in Psychology from University of
+                                       London.
+                                    </p>
+                                    <div class="star-box">
+                                       <img src="images/rating.svg" alt="" class="rate">
+                                       <p class="more">
+                                          <a href="#" class="more__link"> Подробнее...</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="swiper-slide  swiper-slide-duo">
+                                 <div class="reviews-text__box">
+                                    <p class="reviews-title">
+                                       Вячеслав
+                                    </p>
+                                    <p class="reviews-text">
+                                       Tony has more than 10 years of experience, building and implementing
+                                       startups. As
+                                       CTO
+                                       of
+                                       Flexo, Tony projects the vision of the company by directing its
+                                       strategic
+                                       technology
+                                       investments. Before Flexo, Tony was Senior Director of Research and
+                                       Modeling at
+                                       CDA
+                                       Insurance, where he managed a team of developers. Tom has his master’s
+                                       degree in
+                                       Analytics, and a bachelor’s degree in Psychology from University of
+                                       London.
+                                    </p>
+                                    <div class="star-box">
+                                       <img src="images/rating.svg" alt="" class="rate">
+                                       <p class="more">
+                                          <a href="#" class="more__link"> Подробнее...</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="swiper-slide  swiper-slide-duo">
+                                 <div class="reviews-text__box">
+                                    <p class="reviews-title">
+                                       Елена
+                                    </p>
+                                    <p class="reviews-text">
+                                       Tony has more than 10 years of experience, building and implementing
+                                       startups. As
+                                       CTO
+                                       of
+                                       Flexo, Tony projects the vision of the company by directing its
+                                       strategic
+                                       technology
+                                       investments. Before Flexo, Tony was Senior Director of Research and
+                                       Modeling at
+                                       CDA
+                                       Insurance, where he managed a team of developers. Tom has his master’s
+                                       degree in
+                                       Analytics, and a bachelor’s degree in Psychology from University of
+                                       London.
+                                    </p>
+                                    <div class="star-box">
+                                       <img src="images/rating.svg" alt="" class="rate">
+                                       <p class="more">
+                                          <a href="#" class="more__link"> Подробнее...</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="swiper-slide  swiper-slide-duo">
+                                 <div class="reviews-text__box">
+                                    <p class="reviews-title">
+                                       Алексей
+                                    </p>
+                                    <p class="reviews-text">
+                                       Tony has more than 10 years of experience, building and implementing
+                                       startups. As
+                                       CTO
+                                       of
+                                       Flexo, Tony projects the vision of the company by directing its
+                                       strategic
+                                       technology
+                                       investments. Before Flexo, Tony was Senior Director of Research and
+                                       Modeling at
+                                       CDA
+                                       Insurance, where he managed a team of developers. Tom has his master’s
+                                       degree in
+                                       Analytics, and a bachelor’s degree in Psychology from University of
+                                       London.
+                                    </p>
+                                    <div class="star-box">
+                                       <img src="images/rating.svg" alt="" class="rate">
+                                       <p class="more">
+                                          <a href="#" class="more__link"> Подробнее...</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="swiper-slide  swiper-slide-duo">
+                                 <div class="reviews-text__box">
+                                    <p class="reviews-title">
+                                       Евгений
+                                    </p>
+                                    <p class="reviews-text">
+                                       Tony has more than 10 years of experience, building and implementing
+                                       startups. As
+                                       CTO
+                                       of
+                                       Flexo, Tony projects the vision of the company by directing its
+                                       strategic
+                                       technology
+                                       investments. Before Flexo, Tony was Senior Director of Research and
+                                       Modeling at
+                                       CDA
+                                       Insurance, where he managed a team of developers. Tom has his master’s
+                                       degree in
+                                       Analytics, and a bachelor’s degree in Psychology from University of
+                                       London.
+                                    </p>
+                                    <div class="star-box">
+                                       <img src="images/rating.svg" alt="" class="rate">
+                                       <p class="more">
+                                          <a href="#" class="more__link"> Подробнее...</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="swiper-slide  swiper-slide-duo">
+                                 <div class="reviews-text__box">
+                                    <p class="reviews-title">
+                                       Александр
+                                    </p>
+                                    <p class="reviews-text">
+                                       Tony has more than 10 years of experience, building and implementing
+                                       startups. As
+                                       CTO
+                                       of
+                                       Flexo, Tony projects the vision of the company by directing its
+                                       strategic
+                                       technology
+                                       investments. Before Flexo, Tony was Senior Director of Research and
+                                       Modeling at
+                                       CDA
+                                       Insurance, where he managed a team of developers. Tom has his master’s
+                                       degree in
+                                       Analytics, and a bachelor’s degree in Psychology from University of
+                                       London.
+                                    </p>
+                                    <div class="star-box">
+                                       <img src="images/rating.svg" alt="" class="rate">
+                                       <p class="more">
+                                          <a href="#" class="more__link"> Подробнее...</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="swiper-slide  swiper-slide-duo">
+                                 <div class="reviews-text__box">
+                                    <p class="reviews-title">
+                                       Вячеслав
+                                    </p>
+                                    <p class="reviews-text">
+                                       Tony has more than 10 years of experience, building and implementing
+                                       startups. As
+                                       CTO
+                                       of
+                                       Flexo, Tony projects the vision of the company by directing its
+                                       strategic
+                                       technology
+                                       investments. Before Flexo, Tony was Senior Director of Research and
+                                       Modeling at
+                                       CDA
+                                       Insurance, where he managed a team of developers. Tom has his master’s
+                                       degree in
+                                       Analytics, and a bachelor’s degree in Psychology from University of
+                                       London.
+                                    </p>
+                                    <div class="star-box">
+                                       <img src="images/rating.svg" alt="" class="rate">
+                                       <p class="more">
+                                          <a href="#" class="more__link"> Подробнее...</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="swiper-slide  swiper-slide-duo">
+                                 <div class="reviews-text__box">
+                                    <p class="reviews-title">
+                                       Елена
+                                    </p>
+                                    <p class="reviews-text">
+                                       Tony has more than 10 years of experience, building and implementing
+                                       startups. As
+                                       CTO
+                                       of
+                                       Flexo, Tony projects the vision of the company by directing its
+                                       strategic
+                                       technology
+                                       investments. Before Flexo, Tony was Senior Director of Research and
+                                       Modeling at
+                                       CDA
+                                       Insurance, where he managed a team of developers. Tom has his master’s
+                                       degree in
+                                       Analytics, and a bachelor’s degree in Psychology from University of
+                                       London.
+                                    </p>
+                                    <div class="star-box">
+                                       <img src="images/rating.svg" alt="" class="rate">
+                                       <p class="more">
+                                          <a href="#" class="more__link"> Подробнее...</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="swiper-slide  swiper-slide-duo">
+                                 <div class="reviews-text__box">
+                                    <p class="reviews-title">
+                                       Алексей
+                                    </p>
+                                    <p class="reviews-text">
+                                       Tony has more than 10 years of experience, building and implementing
+                                       startups. As
+                                       CTO
+                                       of
+                                       Flexo, Tony projects the vision of the company by directing its
+                                       strategic
+                                       technology
+                                       investments. Before Flexo, Tony was Senior Director of Research and
+                                       Modeling at
+                                       CDA
+                                       Insurance, where he managed a team of developers. Tom has his master’s
+                                       degree in
+                                       Analytics, and a bachelor’s degree in Psychology from University of
+                                       London.
+                                    </p>
+                                    <div class="star-box">
+                                       <img src="images/rating.svg" alt="" class="rate">
+                                       <p class="more">
+                                          <a href="#" class="more__link"> Подробнее...</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="video">
+                           <a data-fancybox class="video__link" href="https://youtu.be/5bo51sL8Fr4">
+                              <img src="images/icons/video.svg" alt="video" class="video-img">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="contacts" id="contact">
+            <div class="container">
+               <div class="contacts__box">
+                  <div class="contacts-info__box">
+                     <div class="title-box contacts-box">
+                        <h2 class="title contacts__title">
+                           КОНТАКТЫ
+                        </h2>
+                        <h3 class="sub-title contacts__sub-title">
+                           РЕКВИЗИТЫ
+                        </h3>
+                     </div>
+
+                     <div class="details">
+                        <div class="details__items">
+                           <div class="details__item">
+                              <div class="item-block">
+                                 <p class="item-title">
+                                    ООО
+                                 </p>
+                                 <p class="item-text">
+                                    Galeoncar
+                                 </p>
+                              </div>
+                              <div class="item-block">
+                                 <p class="item-title">
+                                    ИНН
+                                 </p>
+                                 <p class="item-text">
+                                    1234567891
+                                 </p>
+                              </div>
+                              <div class="item-block">
+                                 <p class="item-title">
+                                    КПП
+                                 </p>
+                                 <p class="item-text">
+                                    770707007
+                                 </p>
+                              </div>
+                              <div class="item-block">
+                                 <p class="item-title">
+                                    ОГРН
+                                 </p>
+                                 <p class="item-text">
+                                    75979000000
+                                 </p>
+                              </div>
+                              <div class="item-block">
+                                 <p class="item-title">
+                                    ОКПО
+                                 </p>
+                                 <p class="item-text">
+                                    47879883
+                                 </p>
+                              </div>
+                              <div class="item-block">
+                                 <p class="item-title">
+                                    Расчетный счет: 780903799890
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="details__item">
+                              <div class="item-block">
+                                 <p class="item-title">
+                                    Расчетный счет
+                                 </p>
+                                 <p class="item-text">
+                                    900603799990
+                                 </p>
+                              </div>
+                              <div class="item-block">
+                                 <p class="item-title">
+                                    Банк
+                                 </p>
+                                 <p class="item-text">
+                                    Bank World
+                                 </p>
+                              </div>
+                              <div class="item-block">
+                                 <p class="item-title">
+                                    БИК
+                                 </p>
+                                 <p class="item-text">
+                                    789789
+                                 </p>
+                              </div>
+                              <div class="item-block">
+                                 <p class="item-title">
+                                    Корр. счет
+                                 </p>
+                                 <p class="item-text">
+                                    301000000000789
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="details__item  details__item-address ">
+                              <div class="item-block">
+                                 <p class="item-title">
+                                    Юридический адрес
+                                 </p>
+                                 <p class="item-text item-text__address">
+                                    129110, г Санкт-Петербург, улица Большая Посадская, дом 46 СТРОЕНИЕ 2, ЭТ.
+                                    4,ПОМ.I
+                                    К.16,17
+                                 </p>
+                              </div>
+                              <div class="item-block">
+                                 <p class="item-title">
+                                    Телефон
+                                 </p>
+                                 <p class="item-text">
+                                    <a class="item__phone-link" href="tel:88888888888"> 8 (888) 888-88-88</a>
+                                 </p>
+                              </div>
+                              <div class="item-block">
+                                 <p class="item-title">
+                                    Генеральный директор
+                                 </p>
+                                 <p class="item-text">
+                                    Лорем Павел Александрович
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="contacts-map__box">
+                  <div class="contacts-map__box-inner">
+                     <div class="contacts__images">
+                        <img src="images/icons/map-icon.svg" alt="" class="map-img">
+                     </div>
+                     <div class="map-box__inner">
+                        <div class="map-modal">
+                           <ul class="modal-list">
+                              <li class="modal-item">
+                                 <p class="modal-title modal-title-big">
+                                    КОНТАКТЫ
+                                 </p>
+                                 <p class="modal-text">
+                                    Поможем подобрать наилучший вариант
+                                 </p>
+                              </li>
+                              <li class="modal-item modal-item-address">
+                                 <p class="modal-title">
+                                    Наш адрес:
+                                 </p>
+                                 <p class="modal-text">
+                                    Санкт-Петербург, Таежная улица, 37
+                                 </p>
+                              </li>
+                              <li class="modal-item modal-item-mail">
+                                 <p class="modal-title">
+                                    Наша почта:
+                                 </p>
+                                 <p class="modal-text">
+                                    <a href="mailto:petrolux@office.com" class="modal-text-link">petrolux@office.com</a>
+                                 </p>
+                              </li>
+                              <li class="modal-item bottom__modal-item">
+                                 <div class="bottom__modal-inner">
+                                    <div class="bottom__modal-left">
+                                       <div class="bottom__modal-btn">
+                                          <a href="#" class="bottom__modal-link slider-link-btn">
+                                             ЗАКАЗАТЬ МАШИНУ
+                                          </a>
+                                       </div>
+                                       <p class="social-description">
+                                          Мы в соц сетях:
+                                       </p>
+                                    </div>
+                                    <div class="bottom__modal-right">
+                                       <div class="modal-right__box">
+                                          <div class="modal-right__phone">
+                                             <a href="tel:88888888898" class="modal-right__phone-link">8 (888)
+                                                888-88-98</a>
+                                          </div>
+                                          <div class="modal-right__text">
+                                             Звоните или оставляйте заявку
+                                          </div>
+                                       </div>
+                                       <div class="modal-right__social">
+                                          <div class="social modal-right-social">
+                                             <div class="social__inner modal-right-social__inner">
+                                                <div class="social__item modal-right-social__item">
+                                                   <a href="#" class="social__link">
+                                                      <img src="images/icons/social-fb.svg" alt="фейсбук"
+                                                         class="social__img">
+                                                   </a>
+                                                </div>
+                                                <div class="social__item modal-right-social__item">
+                                                   <a href="#" class="social__link">
+                                                      <img src="images/icons/social-inst.svg" alt="инстаграм"
+                                                         class="social__img">
+                                                   </a>
+                                                </div>
+                                                <div class="social__item modal-right-social__item">
+                                                   <a href="#" class="social__link">
+                                                      <img src="images/icons/social-vk.svg" alt="вк"
+                                                         class="social__img">
+                                                   </a>
+                                                </div>
+                                                <div class="social__item modal-right-social__item">
+                                                   <a href="#" class="social__link">
+                                                      <img src="images/icons/social-whatsap.svg" alt="вацап"
+                                                         class="social__img">
+                                                   </a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+
+         <div class="map-page">
+            <div class="container">
+               <div class="title-box map-box">
+                  <h2 class="title map__title">
+                     НАШИ
+                  </h2>
+                  <h3 class="sub-title map__sub-title">
+                     САЛОНЫ
+                  </h3>
+               </div>
+            </div>
+            <div id="map" style="  height:500px;"></div>
+         </div>
+
+
+      </div>
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__inner">
+               <div class="footer__logo-box ">
+                  <a href="#" class="logo logo-footer">
+                     <img src="images/icons/footer-logo.svg" alt="logo" class="footer-logo__img">
+                  </a>
+               </div>
+               <div class="menu__inner footer-menu__inner">
+                  <nav class="menu footer-menu">
+                     <ul class=" footer-menu__list">
+                        <li class="menu__list-item footer-menu__list-item">
+                           <a href="#home" class="menu__list-link footer-menu__list-link">
+                              Главная
+                           </a>
+                        </li>
+                        <li class="menu__list-item footer-menu__list-item">
+                           <a href="#carfleet" class="menu__list-link footer-menu__list-link">
+                              Автопарк
+                           </a>
+                        </li>
+                        <li class="menu__list-item footer-menu__list-item">
+                           <a href="#rent" class="menu__list-link footer-menu__list-link">
+                              Аренда
+                           </a>
+                        </li>
+                        <li class="menu__list-item footer-menu__list-item">
+                           <a href="#buisnes" class="menu__list-link footer-menu__list-link">
+                              Для бизнеса
+                           </a>
+                        </li>
+                        <li class="menu__list-item footer-menu__list-item">
+                           <a href="#contact" class="menu__list-link footer-menu__list-link">
+                              Контакты
+                           </a>
+                        </li>
+                        <li class="menu__list-item footer-menu__list-item">
+                           <a href="#user" class="menu__list-link footer-menu__list-link">
+                              Личный кабинет
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="copyright">
+                  2022 © <span>galeoncar</span>
+               </div>
+               <div class="confidentiality-policy">
+                  Политика конфиденциальности
+               </div>
+               <div class="social footer-social">
+                  <div class="social__inner footer-social__inner">
+                     <div class="social__item">
+                        <a href="#" class="social__link">
+                           <img src="images/icons/social-fb.svg" alt="фейсбук" class="social__img">
+                        </a>
+                     </div>
+                     <div class="social__item">
+                        <a href="#" class="social__link">
+                           <img src="images/icons/social-inst.svg" alt="инстаграм" class="social__img">
+                        </a>
+                     </div>
+                     <div class="social__item">
+                        <a href="#" class="social__link">
+                           <img src="images/icons/social-vk.svg" alt="вк" class="social__img">
+                        </a>
+                     </div>
+                     <div class="social__item">
+                        <a href="#" class="social__link">
+                           <img src="images/icons/social-whatsap.svg" alt="вацап" class="social__img">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+   <script src="js/inputmask.min.js"></script>
+   <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/air-datepicker.js"></script>
+   <script src="js/language.js"></script>
+   <script src="js/main.min.js"></script>
+   <!-- <script src="js/main.js"></script> -->
+
+</body>
+
+</html>
